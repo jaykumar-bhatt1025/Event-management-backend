@@ -40,15 +40,15 @@ export class Events extends Model<Events> {
   endDate: Date;
 
   @Column({
-    type: DataType.DATE,
-    allowNull: true,
-  })
-  deletedAt: Date;
-
-  @Column({
     type: DataType.INTEGER,
     allowNull: true,
   })
   totalGuests: number;
+
+  @Column({
+    type: DataType.DATE,
+    allowNull: true,
+  })
+  deletedAt: Date;
 
 }
